@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/main.css">
+  <style>
+    .img {
+      z-index: 10;
+    }
+    .img::after {
+      content: ' ';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #333;
+    }
+    .left_to_right .img::after {
+      top: 30%;
+      left: 90%;
+    }
+    .left_to_right .img {
+      transition: all .3s ease-in-out;
+      transform-origin: 90% 30%;
+    }
+    .left_to_right:hover .img {
+      transform: rotate(-90deg);
+    }
+
+    .right_to_left .img::after {
+      top: 30%;
+      left: 5%;
+    }
+    .right_to_left .img {
+      transition: all .3s ease-in-out;
+      transform-origin: 5% 30%;
+    }
+    .right_to_left:hover .img {
+      transform: rotate(90deg);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Left to right -->
+  <div class="row">
+    <div class="col-sm-6">
+
+      <!-- normal -->
+      <div class="ih-item circle effect16 left_to_right"><a href="#">
+          <div class="img"><img src="../images/7.jpg" alt="img"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </a></div>
+      <!-- end normal -->
+
+    </div>
+    <div class="col-sm-6">
+
+      <!-- colored -->
+      <div class="ih-item circle colored effect16 left_to_right"><a href="#">
+          <div class="img"><img src="../images/2.jpg" alt="img"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </a></div>
+      <!-- end colored -->
+
+    </div>
+  </div>
+  <!-- end Left to right -->
+
+
+  <!-- Right to left-->
+  <div class="row">
+    <div class="col-sm-6">
+
+      <!-- normal -->
+      <div class="ih-item circle effect16 right_to_left"><a href="#">
+          <div class="img"><img src="../images/4.jpg" alt="img"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </a></div>
+      <!-- end normal -->
+
+    </div>
+    <div class="col-sm-6">
+
+      <!-- colored -->
+      <div class="ih-item circle colored effect16 right_to_left"><a href="#">
+          <div class="img"><img src="../images/5.jpg" alt="img"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </a></div>
+      <!-- end colored-->
+
+    </div>
+  </div>
+  <!-- end Right to left -->
+</body>
+
+</html>

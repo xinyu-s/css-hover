@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/main.css">
+  <style>
+    .scale_up .img {
+      opacity: 1;
+      transform: scale(1);
+      transition: all .3s ease-in-out;
+    }
+    .scale_up .info {
+      opacity: 0;
+      transform: scale(0.5);
+      transition: all .3s ease-in-out;
+    }
+    .scale_up:hover .img {
+      opacity: 0;
+      transform: scale(1.5);
+    }
+    .scale_up:hover .info {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .scale_down .img {
+      opacity: 1;
+      transform: scale(1);
+      transition: all .3s ease-in-out;
+    }
+    .scale_down .info {
+      opacity: 0;
+      transform: scale(1.5);
+      transition: all .3s ease-in-out;
+    }
+    .scale_down:hover .img {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    .scale_down:hover .info {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .scale_down_up .img {
+      opacity: 1;
+      transform: scale(1);
+      transition: all .3s ease-in-out;
+    }
+    .scale_down_up .info {
+      opacity: 0;
+      transform: scale(0.5);
+      transition: all .3s ease-in-out .2s;
+    }
+    .scale_down_up:hover .img {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    .scale_down_up:hover .info {
+      opacity: 1;
+      transform: scale(1);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Scale up-->
+  <div class="row">
+    <div class="col-sm-6">
+
+      <!-- normal -->
+      <div class="ih-item circle effect6 scale_up"><a href="#">
+          <div class="img"><img src="../images/6.jpg" alt="img"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </a></div>
+      <!-- end normal -->
+
+    </div>
+    <div class="col-sm-6">
+
+      <!-- colored -->
+      <div class="ih-item circle colored effect6 scale_up"><a href="#">
+          <div class="img"><img src="../images/5.jpg" alt="img"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </a></div>
+      <!-- end colored-->
+
+    </div>
+  </div>
+  <!-- end Scale up-->
+
+
+  <!-- Scale down-->
+  <div class="row">
+    <div class="col-sm-6">
+
+      <!-- normal -->
+      <div class="ih-item circle effect6 scale_down"><a href="#">
+          <div class="img"><img src="../images/8.jpg" alt="img"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </a></div>
+      <!-- end normal -->
+
+    </div>
+    <div class="col-sm-6">
+
+      <!-- colored -->
+      <div class="ih-item circle colored effect6 scale_down"><a href="#">
+          <div class="img"><img src="../images/7.jpg" alt="img"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </a></div>
+      <!-- end colored-->
+
+    </div>
+  </div>
+  <!-- end Scale down-->
+
+
+  <!-- Scale down up-->
+  <div class="row">
+    <div class="col-sm-6">
+
+      <!-- normal -->
+      <div class="ih-item circle effect6 scale_down_up"><a href="#">
+          <div class="img"><img src="../images/1.jpg" alt="img"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </a></div>
+      <!-- end normal -->
+
+    </div>
+    <div class="col-sm-6">
+
+      <!-- colored -->
+      <div class="ih-item circle colored effect6 scale_down_up"><a href="#">
+          <div class="img"><img src="../images/2.jpg" alt="img"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </a></div>
+      <!-- end colored-->
+
+    </div>
+  </div>
+  <!-- end Scale down up-->
+</body>
+
+</html>

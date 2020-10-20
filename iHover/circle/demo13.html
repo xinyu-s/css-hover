@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/main.css">
+  <style>
+    .from_left_and_right .info {
+      opacity: 0;
+      transition: all .3s ease-in-out;
+    }
+    .from_left_and_right .info h3 {
+      transform: translateX(-100%);
+      transition: all .3s ease-in-out;
+    }
+    .from_left_and_right .info p {
+      transform: translateX(100%);
+      transition: all .3s ease-in-out;
+    }
+    .from_left_and_right:hover .info {
+      opacity: 0.8;
+    }
+    .from_left_and_right:hover .info h3 {
+      transform: translateX(0);
+    }
+    .from_left_and_right:hover .info p {
+      transform: translateX(0);
+    }
+
+
+    .top_to_bottom .info {
+      opacity: 0;
+      transition: all .3s ease-in-out;
+    }
+    .top_to_bottom .info h3 {
+      transform: translateY(-100%);
+      transition: all .3s ease-in-out;
+    }
+    .top_to_bottom .info p {
+      transform: translateY(-100%);
+      transition: all .3s ease-in-out;
+    }
+    .top_to_bottom:hover .info {
+      opacity: 0.8;
+    }
+    .top_to_bottom:hover .info h3 {
+      transform: translateY(0);
+    }
+    .top_to_bottom:hover .info p {
+      transform: translateY(0);
+    }
+
+    .bottom_to_top .info {
+      opacity: 0;
+      transition: all .3s ease-in-out;
+    }
+    .bottom_to_top .info h3 {
+      transform: translateY(100%);
+      transition: all .3s ease-in-out;
+    }
+    .bottom_to_top .info p {
+      transform: translateY(100%);
+      transition: all .3s ease-in-out;
+    }
+    .bottom_to_top:hover .info {
+      opacity: 0.8;
+    }
+    .bottom_to_top:hover .info h3 {
+      transform: translateY(0);
+    }
+    .bottom_to_top:hover .info p {
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-sm-6">
+
+      <!-- normal -->
+      <div class="ih-item circle effect13 from_left_and_right"><a href="#">
+          <div class="img"><img src="../images/7.jpg" alt="img"></div>
+          <div class="info">
+            <div class="info-back">
+              <h3>Heading here</h3>
+              <p>Description goes here</p>
+            </div>
+          </div>
+        </a></div>
+      <!-- end normal -->
+
+    </div>
+    <div class="col-sm-6">
+
+      <!-- colored -->
+      <div class="ih-item circle colored effect13 from_left_and_right"><a href="#">
+          <div class="img"><img src="../images/1.jpg" alt="img"></div>
+          <div class="info">
+            <div class="info-back">
+              <h3>Heading here</h3>
+              <p>Description goes here</p>
+            </div>
+          </div>
+        </a></div>
+      <!-- end colored -->
+
+    </div>
+  </div>
+  <!-- end From left and right -->
+
+
+  <!-- Top to bottom -->
+  <div class="row">
+    <div class="col-sm-6">
+
+      <!-- normal -->
+      <div class="ih-item circle effect13 top_to_bottom"><a href="#">
+          <div class="img"><img src="../images/2.jpg" alt="img"></div>
+          <div class="info">
+            <div class="info-back">
+              <h3>Heading here</h3>
+              <p>Description goes here</p>
+            </div>
+          </div>
+        </a></div>
+      <!-- end normal -->
+
+    </div>
+    <div class="col-sm-6">
+
+      <!-- colored -->
+      <div class="ih-item circle colored effect13 top_to_bottom"><a href="#">
+          <div class="img"><img src="../images/3.jpg" alt="img"></div>
+          <div class="info">
+            <div class="info-back">
+              <h3>Heading here</h3>
+              <p>Description goes here</p>
+            </div>
+          </div>
+        </a></div>
+      <!-- end colored -->
+
+    </div>
+  </div>
+  <!-- end Top to bottom -->
+
+
+  <!-- Bottom to top -->
+  <div class="row">
+    <div class="col-sm-6">
+
+      <!-- normal -->
+      <div class="ih-item circle effect13 bottom_to_top"><a href="#">
+          <div class="img"><img src="../images/4.jpg" alt="img"></div>
+          <div class="info">
+            <div class="info-back">
+              <h3>Heading here</h3>
+              <p>Description goes here</p>
+            </div>
+          </div>
+        </a></div>
+      <!-- end normal -->
+
+    </div>
+    <div class="col-sm-6">
+
+      <!-- colored -->
+      <div class="ih-item circle colored effect13 bottom_to_top"><a href="#">
+          <div class="img"><img src="../images/5.jpg" alt="img"></div>
+          <div class="info">
+            <div class="info-back">
+              <h3>Heading here</h3>
+              <p>Description goes here</p>
+            </div>
+          </div>
+        </a></div>
+      <!-- end colored -->
+
+    </div>
+  </div>
+  <!-- end Bottom to top -->
+</body>
+
+</html>

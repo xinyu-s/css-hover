@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/main.css">
+  <style>
+    .left_to_right .img,
+    .right_to_left .img,
+    .top_to_bottom .img,
+    .bottom_to_top .img  {
+      opacity: 1;
+      transform: scale(1);
+      transition: all .35s ease-in-out;
+    }
+    .left_to_right:hover .img,
+    .right_to_left:hover .img,
+    .top_to_bottom:hover .img,
+    .bottom_to_top:hover .img {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+
+    .left_to_right .info {
+      opacity: 0;
+      transform: translateX(-100%);
+      transition: all .35s ease-in-out .2s;
+    }
+    .left_to_right:hover .info {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .right_to_left .info {
+      opacity: 0;
+      transform: translateX(100%);
+      transition: all .35s ease-in-out .2s;
+    }
+    .right_to_left:hover .info {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .top_to_bottom .info {
+      opacity: 0;
+      transform: translateY(-100%);
+      transition: all .35s ease-in-out .2s;
+    }
+    .top_to_bottom:hover .info {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .bottom_to_top .info {
+      opacity: 0;
+      transform: translateY(-100%);
+      transition: all .35s ease-in-out .2s;
+    }
+    .bottom_to_top:hover .info {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Left to right-->
+  <div class="row">
+    <div class="col-sm-6">
+
+      <!-- normal -->
+      <div class="ih-item circle effect7 left_to_right"><a href="#">
+          <div class="img"><img src="../images/4.jpg" alt="img"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </a></div>
+      <!-- end normal -->
+
+    </div>
+    <div class="col-sm-6">
+
+      <!-- colored -->
+      <div class="ih-item circle colored effect7 left_to_right"><a href="#">
+          <div class="img"><img src="../images/5.jpg" alt="img"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </a></div>
+      <!-- end colored -->
+
+    </div>
+  </div>
+  <!-- end Left to right-->
+
+
+  <!-- Right to left-->
+  <div class="row">
+    <div class="col-sm-6">
+
+      <!-- normal -->
+      <div class="ih-item circle effect7 right_to_left"><a href="#">
+          <div class="img"><img src="../images/6.jpg" alt="img"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </a></div>
+      <!-- end normal -->
+
+    </div>
+    <div class="col-sm-6">
+
+      <!-- colored -->
+      <div class="ih-item circle colored effect7 right_to_left"><a href="#">
+          <div class="img"><img src="../images/7.jpg" alt="img"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </a></div>
+      <!-- end colored -->
+
+    </div>
+  </div>
+  <!-- end Right to left-->
+
+
+  <!-- Top to bottom-->
+  <div class="row">
+    <div class="col-sm-6">
+
+      <!-- normal -->
+      <div class="ih-item circle effect7 top_to_bottom"><a href="#">
+          <div class="img"><img src="../images/1.jpg" alt="img"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </a></div>
+      <!-- end normal -->
+
+    </div>
+    <div class="col-sm-6">
+
+      <!-- colored -->
+      <div class="ih-item circle colored effect7 top_to_bottom"><a href="#">
+          <div class="img"><img src="../images/2.jpg" alt="img"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </a></div>
+      <!-- end colored -->
+
+    </div>
+  </div>
+  <!-- end Top to bottom-->
+
+
+  <!-- Bottom to top-->
+  <div class="row">
+    <div class="col-sm-6">
+
+      <!-- normal -->
+      <div class="ih-item circle effect7 bottom_to_top"><a href="#">
+          <div class="img"><img src="../images/3.jpg" alt="img"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </a></div>
+      <!-- end normal -->
+
+    </div>
+    <div class="col-sm-6">
+
+      <!-- colored -->
+      <div class="ih-item circle colored effect7 bottom_to_top"><a href="#">
+          <div class="img"><img src="../images/4.jpg" alt="img"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </a></div>
+      <!-- end colored -->
+
+    </div>
+  </div>
+  <!-- end Bottom to top-->
+</body>
+
+</html>

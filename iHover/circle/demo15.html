@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/main.css">
+  <style>
+    .effect15 .img {
+      transition: all .3s ease-in-out;
+    }
+    .effect15:hover .img {
+      transform: scale(0) rotate(360deg);
+    }
+    .effect15 .info {
+      opacity: 0;
+      transform: scale(0) rotate(-360deg);
+      transition: all .3s ease-in-out .3s;
+    }
+    .effect15:hover .info {
+      opacity: 1;
+      transform: scale(1) rotate(0);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-sm-6">
+
+      <!-- normal -->
+      <div class="ih-item circle effect15"><a href="#">
+          <div class="img"><img src="../images/1.jpg" alt="img"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </a></div>
+      <!-- end normal -->
+
+    </div>
+    <div class="col-sm-6">
+
+      <!-- colored -->
+      <div class="ih-item circle colored effect15"><a href="#">
+          <div class="img"><img src="../images/2.jpg" alt="img"></div>
+          <div class="info">
+            <h3>Heading here</h3>
+            <p>Description goes here</p>
+          </div>
+        </a></div>
+      <!-- end colored -->
+
+    </div>
+  </div>
+</body>
+
+</html>
