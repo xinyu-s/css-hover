@@ -1,0 +1,30 @@
+.keyframes(~"@{nameSpace}-bob", {
+	0% {
+		.prefixed(transform, translateY(-8px));
+	}
+	50% {
+		.prefixed(transform, translateY(-4px));
+	}
+	100% {
+		.prefixed(transform, translateY(-8px));
+	}
+});
+
+.keyframes(~"@{nameSpace}-bob-top", {
+	100% {
+		.prefixed(transform, translateY(-8px));
+	}
+});
+
+.bob() {
+  .hacks();
+  
+  &:hover {
+    .prefixed(animation-name, ~"@{nameSpace}-bob-top, @{nameSpace}-bob");
+    .prefixed(animation-timing-function, ~'ease-in, ease-in');
+    .prefixed(animation-duration, ~'.3s, 1.5s');
+		.prefixed(animation-delay, ~"0s, .3s");
+    .prefixed(animation-iteration-count, ~'1, infinite');
+		.prefixed(animation-direction, ~"normal, alternate");
+  }
+}

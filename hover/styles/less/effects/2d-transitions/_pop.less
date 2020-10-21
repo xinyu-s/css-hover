@@ -1,0 +1,23 @@
+.keyframes(~"@{nameSpace}-pop", {
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+});
+
+.pop() {
+  .hacks();
+  
+  &:hover {
+    // animation-name: ~"@{nameSpace}-pop";
+    // animation-timing-function: ease-in;
+    // animation-duration: @mediumDuration;
+    // animation-iteration-count: 1;
+    .prefixed(animation-name, ~"@{nameSpace}-pop");
+    .prefixed(animation-timing-function, ease-in);
+    .prefixed(animation-duration, @mediumDuration);
+    .prefixed(animation-iteration-count, 1);
+  }
+}

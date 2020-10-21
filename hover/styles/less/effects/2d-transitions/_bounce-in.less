@@ -1,0 +1,11 @@
+.bounce-in() {
+	.hacks();
+	.prefixed(transition-duration, @slowDuration);
+
+	&:hover,
+	&:focus,
+	&:active {
+		.prefixed(transform, scale(1.2));
+		.prefixed(transition-timing-function, cubic-bezier(.23,1.53,.24,.08));
+	}
+}

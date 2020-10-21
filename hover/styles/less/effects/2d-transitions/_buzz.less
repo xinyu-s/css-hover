@@ -1,0 +1,25 @@
+.keyframes(~'@{nameSpace}-buzz', {
+  50% {
+    // transform: translateX(3px) rotate(2deg);
+    .prefixed(transform, translateX(3px) rotate(2deg))
+  }
+  100% {
+    // transform: translateX(0) rotate(0);
+    .prefixed(transform, translateX(0) rotate(0))
+  }
+});
+
+.buzz() {
+  .hacks();
+
+  &:hover,
+  &:active,
+  &:focus {
+    // animation-name: ~'@{nameSpace}-buzz';
+    // animation-duration: .15s;
+    // animation-iteration-count: infinite;
+    .prefixed(animation-name, ~'@{nameSpace}-buzz');
+    .prefixed(animation-duration, .15s);
+    .prefixed(animation-iteration-count, infinite);
+  }
+}

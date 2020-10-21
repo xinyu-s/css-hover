@@ -1,0 +1,31 @@
+.keyframes(~"@{nameSpace}-wobble-horizontal", {
+  16.67% {
+    transform: translateX(8px)
+  }
+  33.33% {
+    transform: translateX(-6px)
+  }
+  50% {
+    transform: translateX(6px)
+  }
+  66.67% {
+    transform: translateX(-2px)
+  }
+  83.33% {
+    transform: translateX(2px)
+  }
+  100% {
+    transform: translateX(0px)
+  }
+});
+
+.wobble-horizontal() {
+  .hacks();
+  
+  &:hover {
+    .prefixed(animation-name, ~"@{nameSpace}-wobble-horizontal");
+    .prefixed(animation-timing-function, ease-in);
+    .prefixed(animation-duration, 1s);
+    .prefixed(animation-iteration-count, 1);
+  }
+}

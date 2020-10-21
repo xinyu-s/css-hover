@@ -1,0 +1,31 @@
+.keyframes(~"@{nameSpace}-wobble-vertical", {
+  16.67% {
+    transform: translateY(8px)
+  }
+  33.33% {
+    transform: translateY(-6px)
+  }
+  50% {
+    transform: translateY(6px)
+  }
+  66.67% {
+    transform: translateY(-2px)
+  }
+  83.33% {
+    transform: translateY(2px)
+  }
+  100% {
+    transform: translateY(0px)
+  }
+});
+
+.wobble-vertical() {
+  .hacks();
+  
+  &:hover {
+    .prefixed(animation-name, ~"@{nameSpace}-wobble-vertical");
+    .prefixed(animation-timing-function, ease-in);
+    .prefixed(animation-duration, 1s);
+    .prefixed(animation-iteration-count, 1);
+  }
+}

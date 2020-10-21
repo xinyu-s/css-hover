@@ -1,0 +1,31 @@
+.keyframes(~"@{nameSpace}-wobble-to-top-right", {
+  16.67% {
+    transform: translate(8px, -8px)
+  }
+  33.33% {
+    transform: translate(-6px, 6px)
+  }
+  50% {
+    transform: translate(6px, -6px)
+  }
+  66.67% {
+    transform: translate(-2px, 2px)
+  }
+  83.33% {
+    transform: translate(2px, -2px)
+  }
+  100% {
+    transform: translate(0px, 0px)
+  }
+});
+
+.wobble-to-top-right() {
+  .hacks();
+  
+  &:hover {
+    .prefixed(animation-name, ~"@{nameSpace}-wobble-to-top-right");
+    .prefixed(animation-timing-function, ease-in);
+    .prefixed(animation-duration, 1s);
+    .prefixed(animation-iteration-count, 1);
+  }
+}

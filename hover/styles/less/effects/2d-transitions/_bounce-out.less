@@ -1,0 +1,12 @@
+/* Bounce Out */
+.bounce-out() {
+	.hacks();
+	.prefixed(transition-duration, @slowDuration);
+
+	&:hover,
+	&:focus,
+	&:active {
+		.prefixed(transform, scale(.8));
+		.prefixed(transition-timing-function, cubic-bezier(.23,1.53,.24,.08));
+	}
+}

@@ -1,0 +1,13 @@
+.skew-backward() {
+  .hacks();
+  .prefixed(transition-duration, @mediumDuration);
+	.prefixed(transition-property, transform);
+  .prefixed(transform-origin, 0 100%);
+
+  &:hover,
+  &:active,
+  &:focus {
+    // transform: skew(-10deg);
+		.prefixed(transform, skew(10deg));
+  }
+}

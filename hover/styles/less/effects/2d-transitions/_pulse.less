@@ -1,0 +1,31 @@
+// @keyframes ~"@{nameSpace}-pulse" {
+//   20% {
+//     transform: scale(1.1);
+//   }
+//   80% {
+//     transform: scale(0.9);
+//   }
+// }
+.keyframes(~"@{nameSpace}-pulse", {
+  20% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(0.9);
+  }
+});
+
+.pulse() {
+  .hacks();
+  
+  &:hover {
+    // animation-name: ~"@{nameSpace}-pulse";
+    // animation-timing-function: ease-in;
+    // animation-duration: 1s;
+    // animation-iteration-count: infinite;
+    .prefixed(animation-name, ~"@{nameSpace}-pulse");
+    .prefixed(animation-timing-function, ease-in);
+    .prefixed(animation-duration, 1s);
+    .prefixed(animation-iteration-count, infinite);
+  }
+}

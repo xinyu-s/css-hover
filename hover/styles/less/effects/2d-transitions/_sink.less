@@ -1,0 +1,12 @@
+.sink() {
+  .hacks();
+  .prefixed(transition-duration, @mediumDuration);
+	.prefixed(transition-property, transform);
+
+  &:hover,
+  &:active,
+  &:focus {
+    // transform: translateY(10px)
+		.prefixed(transform, translateY(10px));
+  }
+}

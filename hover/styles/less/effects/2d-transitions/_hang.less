@@ -1,0 +1,30 @@
+.keyframes(~"@{nameSpace}-hang", {
+	0% {
+		.prefixed(transform, translateY(8px));
+	}
+	50% {
+		.prefixed(transform, translateY(4px));
+	}
+	100% {
+		.prefixed(transform, translateY(8px));
+	}
+});
+
+.keyframes(~"@{nameSpace}-hang-top", {
+	100% {
+		.prefixed(transform, translateY(8px));
+	}
+});
+
+.hang() {
+  .hacks();
+  
+  &:hover {
+    .prefixed(animation-name, ~"@{nameSpace}-hang-top, @{nameSpace}-hang");
+    .prefixed(animation-timing-function, ~'ease-in, ease-in');
+    .prefixed(animation-duration, ~'.3s, 1.5s');
+		.prefixed(animation-delay, ~"0s, .3s");
+    .prefixed(animation-iteration-count, ~'1, infinite');
+		.prefixed(animation-direction, ~"normal, alternate");
+  }
+}

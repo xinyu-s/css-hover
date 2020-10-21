@@ -1,0 +1,31 @@
+.keyframes(~"@{nameSpace}-wobble-skew", {
+  16.67% {
+    transform: skew(-8deg)
+  }
+  33.33% {
+    transform: skew(6deg)
+  }
+  50% {
+    transform: skew(-6deg)
+  }
+  66.67% {
+    transform: skew(2deg)
+  }
+  83.33% {
+    transform: skew(-2deg)
+  }
+  100% {
+    transform: skew(0deg)
+  }
+});
+
+.wobble-skew() {
+  .hacks();
+
+  &:hover {
+    .prefixed(animation-name, ~"@{nameSpace}-wobble-skew");
+    .prefixed(animation-timing-function, ease-in);
+    .prefixed(animation-duration, 1s);
+    .prefixed(animation-iteration-count, 1);
+  }
+}

@@ -1,0 +1,14 @@
+.shrink() {
+  .hacks();
+  // transition-property: transform;
+  // transition-duration: @mediumDuration;
+  .prefixed(transition-property, transform);
+  .prefixed(transition-duration, @mediumDuration);
+
+  &:hover,
+  &:active,
+  &:focus {
+    // transform: scale(0.9);
+    .prefixed(transform, scale(0.9));
+  }
+}

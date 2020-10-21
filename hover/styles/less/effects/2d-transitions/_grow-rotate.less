@@ -1,0 +1,13 @@
+.grow-rotate() {
+  .hacks();
+  .prefixed(transition-duration, @mediumDuration);
+  .prefixed(transition-property, transform);
+  // transition: transform @mediumDuration ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+    // transform: scale(1.1) rotate(10deg);
+    .prefixed(transform, scale(1.1) rotate(10deg));
+  }
+}

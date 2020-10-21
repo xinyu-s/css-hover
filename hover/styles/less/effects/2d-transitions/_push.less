@@ -1,0 +1,23 @@
+.keyframes(~"@{nameSpace}-push", {
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+});
+
+.push() {
+  .hacks();
+  
+  &:hover {
+    // animation-name: ~"@{nameSpace}-push";
+    // animation-timing-function: ease-in;
+    // animation-duration: @mediumDuration;
+    // animation-iteration-count: 1;
+    .prefixed(animation-name, ~"@{nameSpace}-push");
+    .prefixed(animation-timing-function, ease-in);
+    .prefixed(animation-duration, @mediumDuration);
+    .prefixed(animation-iteration-count, 1);
+  }
+}
